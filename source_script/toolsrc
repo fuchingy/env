@@ -1,0 +1,5 @@
+#!/bin/bash
+
+alias ll="ls -lh"
+alias rd='greadlink'  # This needs brew coreutils
+
