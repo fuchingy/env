@@ -52,5 +52,7 @@ export EDITOR=vim
 #Tool usage
 source ~/${REPO_NAME}/mac/source_script/git-completion.bash
 source ~/${REPO_NAME}/mac/source_script/toolsrc
-source ~/${REPO_NAME}/mac/source_script/local_custom
 
+if [ -f ~/${REPO_NAME}/mac/source_script/local_custom ]; then
+    source ~/${REPO_NAME}/mac/source_script/local_custom
+fi
