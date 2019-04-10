@@ -1,8 +1,10 @@
 #!/bin/bash
+target='mac'
+
 cd $( dirname ${BASH_SOURCE[0]} )
 
 echo install dot files
-pushd dotfiles > /dev/null
+pushd ${target}/dotfiles > /dev/null
     for file in *
     do
         if [ -f ~/.$file ]; then
