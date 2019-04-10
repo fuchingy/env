@@ -1,8 +1,10 @@
 # Install
 
-Clone this repo at `~/.env`. Then execute the install.sh script
+Clone this repo at `~/.env`. Then execute the corresponding install.sh script
+based your OS.
 
-    install.sh
+For example, for MAC, execute
 
-The dotfiles will be symlinked, e.g. `~/.bash_profile` symlinked to `~/.env/dotfiles/bash_profile`.
+    install_mac.sh
+
 
