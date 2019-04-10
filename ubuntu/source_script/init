@@ -36,7 +36,7 @@ export LESSOPEN=
 #----------------------------------------------------------------
 # Prompt
 #----------------------------------------------------------------
-source ~/${REPO_NAME}/mac/source_script/git-prompt.sh
+source ~/${REPO_NAME}/ubuntu/source_script/git-prompt.sh
 info_color='\[\e[38;5;41m\]'
 git_color='\[\e[38;5;4m\]'
 reset_color='\[\e[0m\]'
@@ -50,9 +50,9 @@ export HISTCONTROL=ignoredups
 export EDITOR=vim
 
 #Tool usage
-source ~/${REPO_NAME}/mac/source_script/git-completion.bash
-source ~/${REPO_NAME}/mac/source_script/toolsrc
+source ~/${REPO_NAME}/ubuntu/source_script/git-completion.bash
+source ~/${REPO_NAME}/ubuntu/source_script/toolsrc
 
-if [ -f ~/${REPO_NAME}/mac/source_script/local_custom ]; then
-    source ~/${REPO_NAME}/mac/source_script/local_custom
+if [ -f ~/${REPO_NAME}/ubuntu/source_script/local_custom ]; then
+    source ~/${REPO_NAME}/ubuntu/source_script/local_custom
 fi
