@@ -1,0 +1,141 @@
+""" Disable vi compatible features
+set nocompatible
+
+"----------------------------------------------------------------
+" vim-plug management
+"----------------------------------------------------------------
+" To install vim-plug, follow below instructions:
+"   > curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+"       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" In vim, execute
+"   > :PlugInstall
+
+call plug#begin('~/.vim/plugged')
+" nerdtree
+Plug 'scrooloose/nerdtree'
+" markdown highlight
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+"shows a git diff in the 'gutter' (sign column)
+Plug 'airblade/vim-gitgutter'
+"A Git wrapper so awesome
+Plug 'tpope/vim-fugitive'
+call plug#end()
+
+"----------------------------------------------------------------
+" Plugin Setting
+"----------------------------------------------------------------
+" nerdtree
+nnoremap <silent> <F5> :NERDTreeToggle<CR>
+nnoremap <silent> <F6> :NERDTreeFind<CR>
+let NERDTreeWinPos="left"
+let NERDTreeShowBookmarks=1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeBookmarksFile=expand("$HOME/.vim-NERDTreeBookmarks")
+" vim-markdown
+filetype plugin on
+let g:vim_markdown_folding_disabled = 1  "Disable folding
+" vim-gitgutter
+set updatetime=100
+nnoremap <silent> <F1> :GitGutterToggle<CR>
+" vim-fugitive
+":Gblame
+
+"----------------------------------------------------------------
+" Important
+"----------------------------------------------------------------
+" Set leader key
+let mapleader = ","
+let g:mapleader = ","
+
+"----------------------------------------------------------------
+" Locale
+"----------------------------------------------------------------
+set encoding=utf8
+try
+    lang en_US
+catch
+endtry
+
+"----------------------------------------------------------------
+" Appearance
+"----------------------------------------------------------------
+syntax enable
+set ruler
+
+" Do tab completion for file names more like bash
+set wildmode=list:longest
+set wildignore+=*.pyc,*.pyo,.svn,.git,.bzr,
+
+" Default indentation.
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set noautoindent
+set nocindent
+
+" Search without moving cursor
+nnoremap * :let @/ = '\<'.expand('<cword>').'\>'\|set hlsearch<C-M>
+
+" Status line
+set laststatus=2
+set statusline+=%F
+
+" Set hexmode
+let hexmode = 0
+map <leader>x  :%!xxd <cr>
+map <leader>nx :%!xxd -r<cr>
+
+"----------------------------------------------------------------
+" Key
+"----------------------------------------------------------------
+" Fix backspace delete
+set backspace=indent,eol,start
+
+" Line number toggle
+:noremap <F3> :set number! number?<CR>
+
+" Searching highlight toggle
+set hlsearch
+:noremap <F4> :set hlsearch! hlsearch?<CR>
+
+" Remove arrow key to force hjkl adoption
+inoremap jk <esc>
+nnoremap <Up> <nop>
+nnoremap <Down> <nop>
+nnoremap <Left> <nop>
+nnoremap <Right> <nop>
+inoremap <esc> <nop>
+
+" Switch tab
+nnoremap gt <nop>
+nnoremap gT <nop>
+nnoremap <C-l> :tabn<CR>
+nnoremap <C-h> :tabp<CR>
+
+" Draw a line for line-length coding style
+fun! ToggleCC()
+  if &cc == ''
+    set cc=80
+  else
+    set cc=
+  endif
+endfun
+
+nnoremap <F2> :call ToggleCC()<CR>
+
+"----------------------------------------------------------------
+" Layout
+"----------------------------------------------------------------
+set splitright
+
+"----------------------------------------------------------------
+" Performance
+"----------------------------------------------------------------
+" Avoid connect to X server to reduce vim start-up time
+set clipboard=exclude:.*
+
+" Fix paste bug triggered by the inoremaps
+set t_BE=
