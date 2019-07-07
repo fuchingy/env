@@ -34,4 +34,4 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 vim +PlugInstall +qall
 
 echo "If it is the very first time of initialization, execute this:"
-echo "> echo 'source ~/.env/${target}/source_script/init' >> ~/.bashrc"
+echo "> echo 'source ~/.env/${target}/source_script/init' >> ~/.bash_profile"
