@@ -24,7 +24,7 @@ export LC_ALL=
 export CLICOLOR=1
 # Define color variable for Mac ls
 # Other platform's ls may honor different env variable
-eval "$(gdircolors ~/${REPO_NAME}/ubuntu/source_script/.dircolors)";
+eval "$(gdircolors ~/${REPO_NAME}/mac/source_script/.dircolors)";
 # Enable xterm 256 color
 # Can execute this on terminal to print 256 colors
 # > curl -s https://gist.githubusercontent.com/HaleTom/89ffe32783f89f403bba96bd7bcd1263/raw/ | bash
