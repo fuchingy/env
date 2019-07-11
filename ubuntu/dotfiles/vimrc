@@ -88,6 +88,22 @@ let hexmode = 0
 map <leader>x  :%!xxd <cr>
 map <leader>nx :%!xxd -r<cr>
 
+" Highlight color
+hi Search cterm=NONE ctermbg=LightYellow
+hi Visual cterm=NONE ctermbg=DarkGrey
+
+"Cursor mode
+"
+"  1 -> blinking block
+"  2 -> solid block
+"  3 -> blinking underscore
+"  4 -> solid underscore
+"  5 -> blinking vertical bar
+"  6 -> solid vertical bar
+let &t_SI.="\e[5 q" "SI = INSERT mode
+let &t_SR.="\e[4 q" "SR = REPLACE mode
+let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
+
 "----------------------------------------------------------------
 " Key
 "----------------------------------------------------------------
