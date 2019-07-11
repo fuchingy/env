@@ -99,6 +99,7 @@ set backspace=indent,eol,start
 
 " Searching highlight toggle
 set hlsearch
+hi Search cterm=NONE ctermbg=LightYellow
 :noremap <F4> :set hlsearch! hlsearch?<CR>
 
 " Remove arrow key to force hjkl adoption
