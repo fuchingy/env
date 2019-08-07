@@ -20,6 +20,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'airblade/vim-gitgutter'
 "A Git wrapper so awesome
 Plug 'tpope/vim-fugitive'
+"Scala syntax
+Plug 'derekwyatt/vim-scala'
 call plug#end()
 
 "----------------------------------------------------------------
