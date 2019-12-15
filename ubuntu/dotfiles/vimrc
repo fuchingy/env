@@ -94,6 +94,9 @@ map <leader>nx :%!xxd -r<cr>
 hi Search cterm=NONE ctermbg=LightYellow
 hi Visual cterm=NONE ctermbg=DarkGrey
 
+" Highlight my own keyword
+match Error /FC:\|FC?:/
+
 "Cursor mode
 "
 "  1 -> blinking block
