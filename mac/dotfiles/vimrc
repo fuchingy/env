@@ -22,6 +22,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 "Scala syntax
 Plug 'derekwyatt/vim-scala'
+"Enhanced marks
+Plug 'kshenoy/vim-signature'
 call plug#end()
 
 "----------------------------------------------------------------
