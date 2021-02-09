@@ -119,6 +119,7 @@ set backspace=indent,eol,start
 
 " Line number toggle
 :noremap <F3> :set number! number?<CR>
+:noremap <F7> :set relativenumber! relativenumber?<CR>
 
 " Searching highlight toggle
 set hlsearch
