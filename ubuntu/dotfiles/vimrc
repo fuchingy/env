@@ -169,3 +169,9 @@ set clipboard=exclude:.*
 
 " Fix paste bug triggered by the inoremaps
 set t_BE=
+
+"----------------------------------------------------------------
+" Features
+"----------------------------------------------------------------
+" Increase the max tab when using '-p'
+set tabpagemax=100
