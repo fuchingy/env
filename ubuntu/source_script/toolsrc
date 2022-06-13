@@ -3,3 +3,6 @@
 alias ll="ls -lh"
 alias rd='readlink'
 
+# For SiFive Slurm fair share
+export SALLOC_ACCOUNT=perf
+export SLURM_ACCOUNT=perf
