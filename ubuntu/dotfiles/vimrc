@@ -24,6 +24,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'derekwyatt/vim-scala'
 "Enhanced marks
 Plug 'kshenoy/vim-signature'
+"Aligning text, e.g., csv
+Plug 'godlygeek/tabular'
 call plug#end()
 
 "----------------------------------------------------------------
