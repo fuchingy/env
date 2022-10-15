@@ -164,6 +164,11 @@ nnoremap <F2> :call ToggleCC()<CR>
 set splitright
 
 "----------------------------------------------------------------
+" For mouse mode to work in tmux
+"----------------------------------------------------------------
+set ttymouse=xterm2
+
+"----------------------------------------------------------------
 " Performance
 "----------------------------------------------------------------
 " Avoid connect to X server to reduce vim start-up time
