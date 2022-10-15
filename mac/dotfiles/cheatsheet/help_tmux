@@ -1,0 +1,5 @@
+Rename a session                              - Ctrl + B, $
+Choose a session from a list                  - Ctrl + B, s
+Move window                                   - Ctrl + B, :       - move-window -t 3
+Move the current pane into a new window       - Ctrl + B, !
+

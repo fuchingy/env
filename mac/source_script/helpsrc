@@ -1,0 +1,6 @@
+#!/bin/bash
+alias help_git='     cat     ~/.cheatsheet/help_git'
+alias help_tmux='    cat     ~/.cheatsheet/help_tmux'
+alias help_tool='    cat     ~/.cheatsheet/help_tool'
+alias help_vim='     cat     ~/.cheatsheet/help_vim'
+alias help_waveform='cat     ~/.cheatsheet/help_waveform'

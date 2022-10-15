@@ -1,0 +1,4 @@
+Enable mouse mode                             - :set mouse=n
+Disable mouse mode                            - :set mouse-=n
+Reformat as csv style 1                       - :Tab /,
+Reformat as csv style 2                       - :Tab /,\zs

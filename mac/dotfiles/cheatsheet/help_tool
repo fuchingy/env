@@ -1,0 +1,7 @@
+module load     "riscv-tools"
+module load     "verilator/4.204"
+module load     "gcc/gcc/7.3.0"
+module load     "synopsys/vcs/T-2022.06-SP1"
+module load     "synopsys/verdi"
+module load     "sifive/spike"
+module load     "python/python/3.9.2"
