@@ -4,6 +4,8 @@
 
 Clone this repo at `~/` and rename to `.env`.
 
+Modify `name` and `email` in `env/*/dotfiles/gitconfig` as your name and email.
+
 ## Step 2:
 
 Execute the install script based your OS.
