@@ -2,5 +2,5 @@ Open verdi                                    - verdi -ssf test.fsdb -sswr ~/my.
 Show all signals                              - fsdbdebug -hier_tree test.fsdb
 Dump waveform signals to csv                  - /work/perfsight/bin/wave_report -f HB_issueQ.json -o master.issueQ test.fsdb
 LOI to csv                                    - /work/perfsight/bin/loi_to_csv -b 151529 -e 152864 -o loi.csv life_of_instn.json
-LOB                                           - /work/perfsight/config/LifeOfByte//work/perfsight/config/LifeOfByte/x280.run.sh test.fsdb
+LOB                                           - /work/perfsight/config/LifeOfByte/x280.run.sh test.fsdb
 
