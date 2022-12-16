@@ -6,4 +6,5 @@ alias rd='readlink'
 # For SiFive Slurm fair share
 export SALLOC_ACCOUNT=perf
 export SLURM_ACCOUNT=perf
+export SBATCH_ACCOUNT=perf
 export SLURM_PARTITION=redhat
