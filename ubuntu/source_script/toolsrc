@@ -8,3 +8,6 @@ export SALLOC_ACCOUNT=perf
 export SLURM_ACCOUNT=perf
 export SBATCH_ACCOUNT=perf
 export SLURM_PARTITION=redhat
+export SLURM_CONSTRAINT=perf_host
+export SALLOC_CONSTRAINT=perf_host
+export SBATCH_CONSTRAINT=perf_host
