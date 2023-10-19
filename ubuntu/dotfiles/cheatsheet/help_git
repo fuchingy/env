@@ -1,4 +1,6 @@
-Find commits between 2 commits                - git lg --first-parent --ancestry-path 06c3fc2..87771c7
+Find PRs between 2 commits                    - git lg --first-parent 06c3fc2..87771c7
+Find PRs in the past 7 days                   - git lg --first-parent --since="7 days ago"
+Find perf-related PRs                         - /work/sparta/scripts/show_pr_perf.py --sha1 817abfbabd6 --sha2 ba468d40e30
 Rename branch name                            - git branch -m new_name
 Delete a local branch                         - git branch -d issue1
 Push a new local branch to a remote Git repo  - git push -u origin feature_branch_name
