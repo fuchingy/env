@@ -1,0 +1,3 @@
+Enable conda for Dabble                       - source ~/.env/ubuntu/source_script/en_conda.sourceme
+Enable Dabble env                             - conda activate dabble_env_3
+
