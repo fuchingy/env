@@ -4,3 +4,9 @@ Reformat as csv style 1                       - :Tab /,
 Reformat as csv style 2                       - :Tab /,\zs
 Save a session                                - :mks
 Restore a session                             - :so
+set a mark at current cursor location         - m,
+jump to next line with a lowercase mark       - ]'
+jump to previous line with a lowercase mark   - ['
+delete mark a                                 - :delmarks a
+delete all lowercase marks for the current buffer (a-z) : :delmarks!
+
