@@ -2,6 +2,7 @@
 
 alias ll="ls -lh"
 alias rd='readlink'
+alias dirs='dirs -v'
 
 # For SiFive Slurm fair share
 export SALLOC_ACCOUNT=perf

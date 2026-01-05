@@ -4,4 +4,5 @@ alias ls="gls --color=auto"
 alias ll="ls -lh"
 alias rd='greadlink'  # This needs brew coreutils
 alias grep='grep --color=auto'
+alias dirs='dirs -v'
 
