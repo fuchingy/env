@@ -1,0 +1,22 @@
+[Test-planner execution]
+plan yaml files location                      - specs/test-planner-plans/sim/sparta/perf-valid/
+                                                                                               moray_sn2.yaml
+                                                                                               pacific_next.yaml
+                                                                                               pacific_sn1.yaml
+                                                                                               performance_next.yaml
+                                                                                               savanna_sn1.yaml
+                                                                                               serengeti_sn1.yaml
+                                                                                               serengeti_sn2.yaml
+                                                                                               yosemite_sn2.yaml
+test py file location                         - federation-tests/src/federation_tests/coreip/sim/tests/sparta_ubenchmarks/test_metal.py
+test outline location                         - federation-tests/src/federation_tests/coreip/sim/outlines/sparta_ubenchmarks/outline_quick_lat_mem_rd.py
+
+[PostSim Checker]
+PostSim checker tag management                - specs/build-plans/imports/post_sim_checker_imports.json
+                                              - specs/build-plans/imports/cheetah1/cheetah1_typ_mc2_4x8_imports.json
+Perf spec golden                              - specs/perf/*.yml
+PostSim scripts                               - software/scripts/python-postsim/src/python_postsim/metal_software/*
+
+[Metal SW]
+Metal SW tag menagement file                  - specs/build-plans/imports/metal_software_build_imports.json
+
