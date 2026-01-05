@@ -26,6 +26,8 @@ Plug 'derekwyatt/vim-scala'
 Plug 'kshenoy/vim-signature'
 "Aligning text, e.g., csv
 Plug 'godlygeek/tabular'
+"Augmentcode
+Plug 'augmentcode/augment.vim'
 call plug#end()
 
 "----------------------------------------------------------------

@@ -12,3 +12,12 @@ export SLURM_PARTITION=standard_scl,redhat
 export SLURM_CONSTRAINT=perf_host
 export SALLOC_CONSTRAINT=perf_host
 export SBATCH_CONSTRAINT=perf_host
+
+# Setup for the vim+Argument
+# 1. module load vim/9.1.0
+# 2. module load nodejs
+# 3. git clone https://github.com/augmentcode/augment.vim.git ~/.vim/pack/augment/start/augment.vim
+# 4. add "Plug 'augmentcode/augment.vim'" to vimrc
+# 5. Execute ":Augment signin" in vim
+module load vim/9.1.0
+module load nodejs
