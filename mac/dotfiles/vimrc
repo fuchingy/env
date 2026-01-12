@@ -46,6 +46,7 @@ let g:vim_markdown_folding_disabled = 1  "Disable folding
 " vim-gitgutter
 set updatetime=100
 nnoremap <silent> <F1> :GitGutterToggle<CR>
+let g:gitgutter_max_signs = 1000
 " vim-fugitive
 ":Gblame
 
