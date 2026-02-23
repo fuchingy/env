@@ -20,3 +20,6 @@ PostSim scripts                               - software/scripts/python-postsim/
 [Metal SW]
 Metal SW tag menagement file                  - specs/build-plans/imports/metal_software_build_imports.json
 
+[Lint]
+Run lint                                      - wake --in federation_tests lint
+Run lint fix                                  - wake --in federation_tests lintFix
