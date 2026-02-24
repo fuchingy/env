@@ -3,6 +3,7 @@
 alias ll="ls -lh"
 alias rd='readlink'
 alias dirs='dirs -v'
+alias vim='nvim'
 
 # For SiFive Slurm fair share
 export SALLOC_ACCOUNT=perf
@@ -21,3 +22,6 @@ export SBATCH_CONSTRAINT=perf_host
 # 5. Execute ":Augment signin" in vim
 module load vim/9.1.0
 module load nodejs
+
+# Try using Neovim
+module load neovim
