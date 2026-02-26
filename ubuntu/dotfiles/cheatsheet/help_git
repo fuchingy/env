@@ -7,3 +7,5 @@ Push a new local branch to a remote Git repo  - git push -u origin feature_branc
 Cherry pick                                   - git cherry-pick 6a498ec
 Get formatted commit timestamp                - git show --quiet --date='format-local:%m%d%Y%X' --format="%cd"
 Federation git clone via cache                - git clone --reference-if-able /work/github-cache/federation.git git@github.com:sifive/federation
+Review PR step1: find the merge base          - git merge-base master {PR-branch}
+          step2: git diff                     - git diff {SHA}
