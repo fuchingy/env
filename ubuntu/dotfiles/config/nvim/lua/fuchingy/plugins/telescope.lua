@@ -30,7 +30,8 @@ return {
                         ["<C-k>"] = actions.move_selection_previous, -- move to prev result
                         ["<C-j>"] = actions.move_selection_next, -- move to next result
                         ["<C-q>"] = actions.send_selected_to_qflist + custom_actions.open_trouble_qflist,
-                        ["<C-t>"] = trouble_telescope.open,
+-- FC: Comment it out so I can use this keymap to "open as a new tab" until trouble_telescope is useful to me
+--                        ["<C-t>"] = trouble_telescope.open,
                     },
                 },
             },
