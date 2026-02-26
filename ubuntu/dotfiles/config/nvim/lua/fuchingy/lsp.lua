@@ -49,6 +49,23 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
         opts.desc = "Restart LSP"
         keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
+
+        -- Turn off diagnostic at startup
+        vim.diagnostic.enable(false)
+
+        -- toggle diagnostics
+        local diagnostics_active = false
+        keymap.set('n', '<F2>', function()
+            diagnostics_active = not diagnostics_active
+            if diagnostics_active then
+                --vim.diagnostic.show()
+                vim.diagnostic.enable(true)
+            else
+                --vim.diagnostic.hide()
+                vim.diagnostic.enable(false)
+            end
+        end)
+
     end,
 })
 

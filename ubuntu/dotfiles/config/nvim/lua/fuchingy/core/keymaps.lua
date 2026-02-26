@@ -30,6 +30,9 @@ keymap.set("n", "<F7>", ":set relativenumber! relativenumber?<CR>", opts)
 keymap.set("n", "<F4>", ":set hlsearch! hlsearch?<CR>", opts)
 -- Search without moving cursor
 keymap.set("n", "*", ":let @/='\\<'.expand('<cword>').'\\>'<bar>set hlsearch<CR>", opts)
+
+-- Toggle signcolumn display
+keymap.set('n', '<F1>', ':lua vim.o.signcolumn = vim.o.signcolumn == "yes" and "no" or "yes"<CR>', {noremap = true, silent = true})
 -----------------
 -- Insert mode --
 -----------------
