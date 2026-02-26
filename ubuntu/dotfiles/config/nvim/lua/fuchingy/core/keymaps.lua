@@ -29,7 +29,7 @@ keymap.set("n", "<F7>", ":set relativenumber! relativenumber?<CR>", opts)
 -- Searching highlight toggle
 keymap.set("n", "<F4>", ":set hlsearch! hlsearch?<CR>", opts)
 -- Search without moving cursor
-keymap.set("n", "*", "*N", opts)
+keymap.set("n", "*", ":let @/='\\<'.expand('<cword>').'\\>'<bar>set hlsearch<CR>", opts)
 -----------------
 -- Insert mode --
 -----------------
