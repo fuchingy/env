@@ -1,11 +1,5 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
--- Color theme and color override
-vim.cmd('colorscheme colorsbox-stbright')
-vim.cmd('highlight Normal guibg=#000000')
-vim.cmd('highlight NormalNC guibg=#000000')
-vim.cmd('highlight Comment guifg=#606060')
-
 local opt = vim.opt
 
 opt.relativenumber = false
