@@ -29,6 +29,20 @@ return {
                     },
                 },
             },
+            -- Disable some keymaps
+            on_attach = function(bufnr)
+                local api = require('nvim-tree.api')
+
+                -- Default mappings
+                api.config.mappings.default_on_attach(bufnr)
+
+                -- Remove the "Toggle Group Empty" keymap
+                vim.keymap.del('n', 'L', { buffer = bufnr })
+                -- Remove the "Toggle Filter: No Bookmark" keymap
+                vim.keymap.del('n', 'M', { buffer = bufnr })
+                -- Remove the "Toggle Filter: Dotfiles" keymap
+                vim.keymap.del('n', 'H', { buffer = bufnr })
+            end,
             -- disable window_picker for
             -- explorer to work well with
             -- window splits
