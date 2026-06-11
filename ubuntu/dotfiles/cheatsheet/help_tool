@@ -5,3 +5,5 @@ module load     "synopsys/vcs/T-2022.06-SP1"
 module load     "synopsys/verdi"
 module load     "sifive/spike"
 module load     "python/python/3.9.2"
+
+Copy folder A to folder B       rsync -av --dry-run ./A ./B
