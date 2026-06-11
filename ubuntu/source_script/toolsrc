@@ -4,6 +4,7 @@ alias ll="ls -lh"
 alias rd='readlink'
 alias dirs='dirs -v'
 alias vim='nvim'
+alias auggie=~/.local/lib/node_modules/@augmentcode/auggie/augment.mjs
 
 # For SiFive Slurm fair share
 export SALLOC_ACCOUNT=perf
