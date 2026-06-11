@@ -29,7 +29,7 @@ return {
         colors.bg_popup = bg_dark
         colors.bg_search = bg_search
         colors.bg_sidebar = transparent and colors.none or bg_dark
-        colors.bg_statusline = transparent and colors.none or bg_dark
+        colors.bg_statusline = transparent and colors.none or "#003544"
         colors.bg_visual = bg_visual
         colors.border = border
         colors.fg = fg
