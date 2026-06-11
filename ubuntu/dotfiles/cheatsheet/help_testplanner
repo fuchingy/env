@@ -23,3 +23,6 @@ Metal SW tag menagement file                  - specs/build-plans/imports/metal_
 [Lint]
 Run lint                                      - wake --in federation_tests lint
 Run lint fix                                  - wake --in federation_tests lintFix
+
+[Wake]
+Run perf_diagnosis                            - ./scripts/runWake --in perf_tools exec perf_diagnosis  ...
