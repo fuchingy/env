@@ -8,3 +8,7 @@ alias help_dabble='cat     ~/.cheatsheet/help_dabble'
 alias help_slurm='cat     ~/.cheatsheet/help_slurm'
 alias help_testplanner='cat  ~/.cheatsheet/help_testplanner'
 alias help_server='cat  ~/.cheatsheet/help_server'
+
+# AI Skill script
+alias SKILL_run_plan_yaml.sh='~/.augment/skills/federation-build-run/scripts/run_plan_yaml.sh'
+alias SKILL_setup_new_federation.sh='~/.augment/skills/federation-build-run/scripts/setup_new_federation.sh'

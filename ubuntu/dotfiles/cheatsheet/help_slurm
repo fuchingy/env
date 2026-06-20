@@ -1,3 +1,4 @@
 List all my slurm jobs' IDs                   - squeue -A perf -u fuchingy -p standard_scl -o "%.10i %.40j %.8T %.15u %.11M %.11l %R %Z %w"
 Show info of a job                            - scontrol show job 32631316
+Run my Slurm dashboard                        - slurm_dashboard
 

@@ -1,4 +1,12 @@
 [Test-planner execution]
+Load the test-planner                         - . ./tools/test-planner/load-test-planner
+Run end-to-end                                - test-planner run --file specs/test-planner-plans/sim/sparta/perf-valid/pacific_sn1.yaml -o pacific_sn1.json
+Run end-to-end with --delete-on-pass          - test-planner run --delete-on-pass --file specs/test-planner-plans/sim/sparta/perf-valid/pacific_sn1.yaml -o pacific_sn1.json
+Run in 2 phases                               - test-planner run --wake-build-option=--dry-run --file specs/test-planner-plans/sim/sparta/perf-valid/pacific_sn1.yaml -o pacific_sn1.json
+                                              - wake -v build plan.json
+Run in 2 phases locally                       - test-planner run --wake-build-option=--dry-run --local --file specs/test-planner-plans/sim/sparta/perf-valid/pacific_sn1.yaml -o pacific_sn1.json
+                                              - wake -v build plan.json
+
 plan yaml files location                      - specs/test-planner-plans/sim/sparta/perf-valid/
                                                                                                moray_sn2.yaml
                                                                                                pacific_next.yaml
@@ -23,6 +31,15 @@ Metal SW tag menagement file                  - specs/build-plans/imports/metal_
 [Lint]
 Run lint                                      - wake --in federation_tests lint
 Run lint fix                                  - wake --in federation_tests lintFix
+                                              - ./scripts/runWake --in perf_tools lintFix
+                                              - ./scripts/runWake --in federation_tests lintFix
+                                              - ./scripts/runWake --in python_postsim lintFix
+                                              - ./scripts/runWake --in metal_software clangFormatFix
+                                              - ./scripts/runWake --in python catchallLintFix
 
 [Wake]
 Run perf_diagnosis                            - ./scripts/runWake --in perf_tools exec perf_diagnosis  ...
+
+[Fix]
+Update tools/perf-tools/poetry.lock           - wake --in perf_tools -x "updatePerfToolsPoetryLock Unit"
+                                              - wake --in perf_tools -x 'makePerfToolsEnvironment Unit'
