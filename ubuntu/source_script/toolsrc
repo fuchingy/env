@@ -5,7 +5,6 @@ alias rd='readlink'
 alias dirs='dirs -v'
 alias vim='nvim'
 alias auggie=~/.local/lib/node_modules/@augmentcode/auggie/augment.mjs
-alias slurm_dashboard=/scratch/perf/fuchingy/task/20260611_my_slurm_script/slrum_dashboard/run_dashboard.sh
 
 # For SiFive Slurm fair share
 export SALLOC_ACCOUNT=perf
