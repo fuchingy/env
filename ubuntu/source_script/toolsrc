@@ -15,6 +15,11 @@ export SLURM_CONSTRAINT=perf_host
 export SALLOC_CONSTRAINT=perf_host
 export SBATCH_CONSTRAINT=perf_host
 
+# For accessing the bigsky slurm globally, uncomment below
+#unset SLURM_ACCOUNT
+#unset SLURM_CONSTRAINT
+#unset SLURM_PARTITION
+
 # Setup for the vim+Argument
 # 1. module load vim/9.1.0
 # 2. module load nodejs
