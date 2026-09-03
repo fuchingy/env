@@ -18,6 +18,7 @@ plan yaml files location                      - specs/test-planner-plans/sim/spa
                                                                                                yosemite_sn2.yaml
 test py file location                         - federation-tests/src/federation_tests/coreip/sim/tests/sparta_ubenchmarks/test_metal.py
 test outline location                         - federation-tests/src/federation_tests/coreip/sim/outlines/sparta_ubenchmarks/outline_quick_lat_mem_rd.py
+perf_diagnosis golden file base               - /nfs/teams/perf/dc-scratch/regression/perf_diagnosis_golden
 
 [PostSim Checker]
 PostSim checker tag management                - specs/build-plans/imports/post_sim_checker_imports.json
