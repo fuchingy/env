@@ -31,3 +31,6 @@ module load nodejs
 
 # Try using Neovim
 module load neovim
+
+# Enable opencode
+module load opencode
