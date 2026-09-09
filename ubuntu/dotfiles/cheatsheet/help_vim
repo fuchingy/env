@@ -9,4 +9,8 @@ jump to next line with a lowercase mark       - ]'
 jump to previous line with a lowercase mark   - ['
 delete mark a                                 - :delmarks a
 delete all lowercase marks for the current buffer (a-z) : :delmarks!
-
+Heirarchy a file                              - set foldmethod=indent
+  Toggle open/clode                           - za
+  Close all                                   - zM
+  Open all                                    - zR
+  Disable this feature                        - :set foldmethod=manual

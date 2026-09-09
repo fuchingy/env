@@ -1,4 +1,5 @@
 List all my slurm jobs' IDs                   - squeue -A perf -u fuchingy -p standard_scl -o "%.10i %.40j %.8T %.15u %.11M %.11l %R %Z %w"
 Show info of a job                            - scontrol show job 32631316
 Run the perf team slurm usage script          - /work/sparta/scripts/slurm_usage_perf
+Check the Dabble study run status             - cd to a study folder and then execute: slurm_dabble_study_status.sh
 
