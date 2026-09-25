@@ -1,4 +1,31 @@
-# AGENTS.md
+# Language
+
+## 1. Conversation
+我是一個在科技領域工作幾十年的臺灣人，習慣的對話是繁體中文，但技術關鍵字我比較習慣使用英文。
+
+例如：
+1. CPU 會比「中央處理器」好理解
+2. Cache 會比「快取記憶體」好理解
+3. Bus 會比「匯流排」好理解
+
+我專長的領域是 Computer Architecture，所以你我在對話的時候，請用繁體中文與我溝通，但技術關鍵字還是要保留英文，這樣我最能夠理解。
+
+## 2. Coding
+
+在程式撰寫方面，裡面的註解等語言應該要用全英文，因為我是在國際公司工作，需要全球的人都能看得懂。
+
+## 3. md file
+
+你不需要產生 MD 檔來向我說明你改了什麼。
+如果我有要你產生 MD 檔的話，裡面要用全英文的。
+
+# SiFive server environment
+
+## Use web browser to show the server file
+
+For files under /nfs/teams/perf/share/https/users/fuchingy/, we can show it via https://nfsweb.internal.sifive.com/perf/users/fuchingy/
+
+# Coding guidelines
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 

@@ -6,10 +6,6 @@
     "@sifive-internal/opencode-litellm-provider",
     "opencode-system-prompt-logger"
   ],
-  "instructions": [
-    "instructions/language.md",
-    "instructions/sifive-server-env.md"
-  ],
   "experimental": {
     "disable_paste_summary": true
   }
