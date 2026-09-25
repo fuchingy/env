@@ -6,6 +6,13 @@
     "@sifive-internal/opencode-litellm-provider",
     "opencode-system-prompt-logger"
   ],
+  "mcp": {
+      "glean_default": {
+          "enabled": true,
+          "type": "remote",
+          "url": "https://sifive-be.glean.com/mcp/default"
+      }
+  },
   "experimental": {
     "disable_paste_summary": true
   }
