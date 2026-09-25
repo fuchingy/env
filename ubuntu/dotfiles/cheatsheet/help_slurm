@@ -2,4 +2,7 @@ List all my slurm jobs' IDs                   - squeue -A perf -u fuchingy -p st
 Show info of a job                            - scontrol show job 32631316
 Run the perf team slurm usage script          - /work/sparta/scripts/slurm_usage_perf
 Check the Dabble study run status             - cd to a study folder and then execute: slurm_dabble_study_status.sh
+Show all my jobs                              - squeue -u "$USER"
+Cancel all my jobs                            - scancel -u "$USER"
+Cancel only my pending jobs                   - scancel -u "$USER" --state=PENDING
 
